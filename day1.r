@@ -1,0 +1,22 @@
+v= TRUE
+v
+v=FALSE
+v=23.5
+  v=2L
+print(class(v))
+v=2+5i
+v='true'
+print(var_name2.)
+v1
+v1=TRUE
+var_name2.="hello"
+var&nam="hello"
+2var_name="hello"
+.2_var="hello"
+$var="hello"
+_var23="jh"
+__var="hh"
+var__nam="hj"
+var..nam="kl"
+var.2=09
+c2k3=87
