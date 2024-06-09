@@ -1,0 +1,60 @@
+a<-c(5,10,15,20,25,30)
+class(a)
+arr<-array(a)
+class(arr)
+dim(arr)
+x<-array(a,dim=c(2,3,2))
+x
+length(x)
+v1<-c(1,2,3)
+v1
+v2<-c(4,5,6,7,8,9)
+v3<-array(c(v1,v2),dim=c(3,3,2))
+v3<-apply(v3,c(1),sum)
+v3
+v3<-apply(v3,c(2),sum)
+row_name<-c("r1","r2","r3")
+col_name<-c("c1","c2","c3")
+mat_name<-c("mat1","mat2")
+v1 <- array(data = 1:(4*4*5), dim = c(4, 4, 5))
+v1
+v1(4,4,1)
+v1[1:4,1:4,1]
+v1[2,3,4]
+v1[2:4,2:4,4]
+v1[2:3,1:4,4]
+data_frame=data.frame(TRAINING=c("stre","stm","othr"),Pulse=c(100,150,200),Duration=c(60,30,52))
+data_frame
+data_frame[1:2]
+new_row<-rbind(data_frame,c("weight",110,111))
+data=data.frame(name=c("A","b","c","d","e","f","g","h","i","j"),
+                roll=c(1,2,3,4,5,6,7,8,9,19),
+                reg=c(11,22,33,44,55,66,77,88,99,111),
+                sec=c("ad","vc","ed","dd","fd","df","de","fd","ss","ft"),
+                gender=c("m","f","o","m","f","o","m","f","o","m"))
+data
+subset(data_frame,Pulse>100)
+subset
+data_frame[["TRAINING"]]
+data_frame["TRAINING"]
+data_1=data.frame(name=c("ABC","XYZ"),age=c(20,25))
+data_1
+data_2=data.frame(matrix(ncol=2,nrow=3))
+data_2
+data_3=data.frame(matrix(ncol=3,nrow=2))
+merge(data_2,data_3)
+act1<-read.csv("C://Users//Asus//Downloads//diabetes.csv")
+act1
+act2<-read.csv("C://Users//Asus//Downloads//Prostate_cancer.csv")
+act2
+class(act1)
+typeof(act1)
+names(act1)
+dimnames(act1)
+head(act1)
+tail(act1)
+print(subset(act1,Age >35))
+print(subset(act1,Pregnancies & BMI>30))
+print(subset(act1,select=c(BloodPressure,Insulin,Glucose) & Age>25 & Age<35))
+data=subset(act1,select=c(Age) & SkinThickness>19 & Age>35 & Age<50)
+print(data)
